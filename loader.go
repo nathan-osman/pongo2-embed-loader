@@ -13,11 +13,12 @@ type Loader struct {
 	Content embed.FS
 }
 
+// Abs returns the absolute path for the specified template.
 func (l *Loader) Abs(base, name string) string {
 	return name
 }
 
-// Get creates a reader
+// Get creates a reader for the specified template.
 func (l *Loader) Get(path string) (io.Reader, error) {
 	f, err := l.Content.Open(path)
 	if err != nil {
