@@ -2,15 +2,15 @@ package loader
 
 import (
 	"bytes"
-	"embed"
 	"io"
+	"io/fs"
 	"io/ioutil"
 )
 
 // Loader implements pongo2's TemplateLoader interface for templates stored
-// using embed.FS (Go 1.16+).
+// in a fs.FS (such as an embed.FS).
 type Loader struct {
-	Content embed.FS
+	Content fs.FS
 }
 
 // Abs returns the absolute path for the specified template.
