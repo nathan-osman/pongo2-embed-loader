@@ -1,4 +1,4 @@
-module github.com/nathan-osman/pongo2-embed-loader
+module github.com/nathan-osman/pongo2-embed-loader/v4
 
 go 1.16
 
