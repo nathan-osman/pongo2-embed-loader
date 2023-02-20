@@ -4,7 +4,7 @@ import (
 	"embed"
 	"testing"
 
-	"github.com/flosch/pongo2"
+	"github.com/flosch/pongo2/v4"
 )
 
 var (
